@@ -6,7 +6,7 @@ export default function New() {
 
   const handleClickSubmit = async () => {
     const response = await fetch(
-      new URL("/clusters", process.env.NEXT_PUBLIC_API_HOST),
+      new URL("/clusters", "http://localhost:8080"),
       {
         method: "POST",
         headers: { "content-type": "application/json" },
